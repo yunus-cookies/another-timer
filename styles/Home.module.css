@@ -23,7 +23,6 @@
 .time {
   font-size: 150px;
   line-height: 66px;
-  color: white;
   display: grid;
   place-items: center;
 }
