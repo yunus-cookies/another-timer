@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "GT America Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  src: url("/font/gtamerica-regular.woff2") format("woff2"),
+    url("/font/gtamerica-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT America Regular";
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+  src: url("/font/gtamerica-regularitalic.woff2") format("woff2"),
+    url("/font/gtamerica-regularitalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT America Regular";
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  src: url("/font/gtamerica-bold.woff2") format("woff2"),
+    url("/font/gtamerica-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT America Extended Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  src: url("/font/gtamerica-extendedbold.woff2") format("woff2"),
+    url("/font/gtamerica-extendedbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GT America Compressed Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  src: url("/font/gtamerica-compressedbold.woff2") format("woff2"),
+    url("/font/gtamerica-compressedbold.woff") format("woff");
+}
+/* Expanded Black turns to Expanded #000 in build, so the font won't work. */
+@font-face {
+  font-family: "GT America Expanded-Black";
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  src: url("/font/gtamerica-expandedblack.woff2") format("woff2"),
+    url("/font/gtamerica-expandedblack.woff") format("woff");
+}

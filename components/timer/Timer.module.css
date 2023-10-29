@@ -1,15 +1,12 @@
 .container {
-  font-family: Impact, fantasy;
   display: grid;
   place-items: center;
   height: 100vh;
-  padding: 10px;
-  gap: 10px;
 }
 
 .wrapper {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .layout {
@@ -17,26 +14,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 75px;
+  width: 300px;
+  height: 250px;
 }
 
 .time {
   font-size: 150px;
-  line-height: 66px;
   display: grid;
   place-items: center;
+  font-family: "GT America Expanded-Black";
+  font-weight: 700;
 }
 
 .text {
   font-size: 50px;
   text-transform: uppercase;
-  line-height: 12px;
+  font-family: "GT America Regular";
+  font-weight: 400;
 }
 
 .squareWrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+  margin-top: 60px;
 }
 
 .square {
