@@ -6,7 +6,20 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+}
+
+.headline {
+  font-family: "GT America Regular";
+  font-size: 80px;
+}
+
+.countdownWrapper {
+  display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .layout {
