@@ -9,10 +9,9 @@ export const Timer = dynamic(() => import("@/components/timer"), {
 
 export default function Home() {
   const { timeUnits, isLive } = useTimeSpan({
-    timestampMS: 1700000460000,
+    timestampMS: 1700139600000,
   });
 
-  //1700139600000
   const { days, hours, minutes, seconds } = timeUnits;
 
   const pad = (number: number) => String(number).padStart(2, "0");
