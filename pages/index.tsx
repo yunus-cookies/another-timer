@@ -1,15 +1,19 @@
 import Head from "next/head";
 import useTimeSpan from "@/utils/use-time-span";
 import dynamic from "next/dynamic";
+import BFProject from "public/static/bf-project.gif";
 
 export const Timer = dynamic(() => import("@/components/timer"), {
   ssr: false,
 });
 
 export default function Home() {
-  const { days, hours, minutes, seconds } = useTimeSpan({
-    timestampMS: 1700139600000,
+  const { timeUnits, isLive } = useTimeSpan({
+    timestampMS: 1700000460000,
   });
+
+  //1700139600000
+  const { days, hours, minutes, seconds } = timeUnits;
 
   const pad = (number: number) => String(number).padStart(2, "0");
 
@@ -29,7 +33,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Timer countdown={countdown} />
+        {isLive ? (
+          <img src={BFProject.src} width="100%" height="100%" alt="bf-sb" />
+        ) : (
+          <Timer countdown={countdown} />
+        )}
       </>
     </>
   );
